@@ -24,7 +24,7 @@ headers = {
 }
 
 if not openai_api_key:
-    st.info("Please add your OpenAI API key to continue.", icon="\ud83d\udd11")
+    st.info("Please add your OpenAI API key to continue.")
 else:
     # Let the user upload a file via `st.file_uploader`.
     uploaded_file = st.file_uploader(
