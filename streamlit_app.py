@@ -10,7 +10,7 @@ def clean_text(text):
 tts_api_url = "https://api.openai.com/v1/audio/speech"
 
 # Show title and description.
-st.title("\ud83d\udcc4 PDF to Speech")
+st.title("PDF to Speech")
 st.write(
     "Tired of silly dyslexia getting in your way? Use PDF to Speech to instantly hear any PDF!"
     "\nTo use this app, you need to provide an OpenAI API key, which you can get [here](https://platform.openai.com/account/api-keys). "
