@@ -9,7 +9,7 @@ tts_api_url = "https://api.openai.com/v1/audio/speech"
 st.title("PDF to Speech")
 st.write(
     "Tired of reading boring old words? Want to employ the power of AI to never have to read again? Use PDF to Speech to instantly hear any PDF!"
-    "\nTo use this app, you need to provide an OpenAI API key, which you can get [here](https://platform.openai.com/account/api-keys).\nIF YOU\'RE A PERSPECTIVE EMPLOYER, EMAIL ME AND I WILL PROVIDE YOU AN API KEY :)  "
+    "\nTo use this app, you need to provide an OpenAI API key, which you can get [here](https://platform.openai.com/account/api-keys).  "
 )
 
 # Ask user for their OpenAI API key via `st.text_input`.
