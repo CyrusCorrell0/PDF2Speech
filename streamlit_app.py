@@ -1,4 +1,3 @@
-
 import PyPDF2
 import requests
 import streamlit as st
@@ -57,7 +56,6 @@ else:
         if current_chunk:
             chunks.append(current_chunk.strip())
 
-        # Create an MP3 file
         mp3_filename = "output.mp3"
         with open(mp3_filename, "wb") as audio_file:
             for idx, chunk in enumerate(chunks):
@@ -67,19 +65,19 @@ else:
                     "model": "tts-1"
                 }
                 response = requests.post(tts_api_url, json=payload, headers=headers)
-
+    
                 if response.status_code == 200:
                     audio_file.write(response.content)
                     st.write(f"Processed chunk {idx + 1}/{len(chunks)}")
                 else:
                     st.error(f"Failed to process chunk {idx + 1}. Status: {response.status_code}, Response: {response.text}")
                     break
-
-        # Allow the user to download the generated MP3
+    
+        # Provide a download button
         with open(mp3_filename, "rb") as audio_file:
             st.download_button(
-                label="\ud83c\udfa7 Download the generated MP3",
-                data=audio_file,
+                label="🎧 Download the generated MP3",
+                data=audio_file.read(),
                 file_name=mp3_filename,
                 mime="audio/mpeg"
             )
