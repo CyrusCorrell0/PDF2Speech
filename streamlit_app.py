@@ -2,9 +2,9 @@ import streamlit as st
 from openai import OpenAI
 
 # Show title and description.
-st.title("📄 Document question answering")
+st.title("📄 PDF to Speech")
 st.write(
-    "Upload a document below and ask a question about it – GPT will answer! "
+    "Tired of silly dyslexia getting in your way? Use PDF to Speech to instantly hear any PDF!"
     "To use this app, you need to provide an OpenAI API key, which you can get [here](https://platform.openai.com/account/api-keys). "
 )
 
