@@ -5,7 +5,7 @@ from openai import OpenAI
 st.title("📄 PDF to Speech")
 st.write(
     "Tired of silly dyslexia getting in your way? Use PDF to Speech to instantly hear any PDF!"
-    "To use this app, you need to provide an OpenAI API key, which you can get [here](https://platform.openai.com/account/api-keys). "
+    "\nTo use this app, you need to provide an OpenAI API key, which you can get [here](https://platform.openai.com/account/api-keys). "
 )
 
 # Ask user for their OpenAI API key via `st.text_input`.
