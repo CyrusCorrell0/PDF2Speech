@@ -16,7 +16,7 @@ st.write(
 # via `st.secrets`, see https://docs.streamlit.io/develop/concepts/connections/secrets-management
 openai_api_key = st.text_input("OpenAI API Key", type="password")
 headers = {
-    "Authorization": f"Bearer {open_api_key}",
+    "Authorization": f"Bearer {openai_api_key}",
     "Content-Type": "application/json"
 }
 if not openai_api_key:
